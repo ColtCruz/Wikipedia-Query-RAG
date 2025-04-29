@@ -14,8 +14,8 @@ hf_logging.set_verbosity_error()
 warnings.filterwarnings("ignore")
 
 # ─── Parameters ────────────────────────────────────────────────────────────────
-chunk_size    = 500
-chunk_overlap = 50
+chunk_size    = 1000
+chunk_overlap = 500
 model_name    = "sentence-transformers/all-distilroberta-v1"
 top_k         = 5
 
