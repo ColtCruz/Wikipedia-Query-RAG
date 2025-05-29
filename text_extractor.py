@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def scrape_webpage(url):
     # Hard‑coded URL inside the function; the url parameter is ignored
-    url = "https://en.wikipedia.org/wiki/Retrieval-augmented_generation"
+    url = "https://en.wikipedia.org/wiki/Popol_Vuh"
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, "html.parser")
