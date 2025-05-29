@@ -1,51 +1,340 @@
-Retrieval-augmented generation (RAG) is a technique that enables generative artificial intelligence (Gen AI) models to retrieve and incorporate new information.[1] It modifies interactions with a large language model (LLM) so that the model responds to user queries with reference to a specified set of documents, using this information to supplement information from its pre-existing training data.[2] This allows LLMs to use domain-specific and/or updated information.[2][3] Use cases include providing chatbot access to internal company data or generating responses based on authoritative sources.
 
-RAG improves large language models (LLMs) by incorporating information retrieval before generating responses.[4] Unlike traditional LLMs that rely on static training data, RAG pulls relevant text from databases, uploaded documents, or web sources.[1] According to Ars Technica, "RAG is a way of improving LLM performance, in essence by blending the LLM process with a web search or other document look-up process to help LLMs stick to the facts." This method helps reduce AI hallucinations,[4][5] which have led to real-world issues like chatbots inventing policies or lawyers citing nonexistent legal cases.[6]
+WikipediaThe Free Encyclopedia
+Search Wikipedia
+Search
+Donate
+Create account
+Log in
 
-By dynamically retrieving information, RAG enables AI to provide more accurate responses without frequent retraining. According to IBM, "RAG also reduces the need for users to continuously train the model on new data and update its parameters as circumstances evolve. In this way, RAG can lower the computational and financial costs of running LLM-powered chatbots in an enterprise setting."[1]
+Contents hide
+(Top)
+History
 
-Beyond efficiency gains, RAG also allows LLMs to include source references in their responses, enabling users to verify information by reviewing cited documents or original sources. This can provide greater transparency, as users can cross-check retrieved content to ensure accuracy and relevance.
+Francisco Ximénez's manuscript
+Father Ximénez's source
+Story of Hunahpú and Xbalanqué
+Structure
 
-The term "retrieval-augmented generation" (RAG) was first introduced in 2020 by Douwe Kiela, Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, and Sebastian Riedel in their research paper Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,[4] at Meta.[7][3]
+Excerpts
+"Preamble"
+"The Primordial World"
+Modern history
 
-In June 2024, Ars Technica reported, "But LLMs aren’t humans, of course. Their training data can age quickly, particularly in more time-sensitive queries. In addition, the LLM often can’t distinguish specific sources of its knowledge, as all its training data is blended together into a kind of soup." In 2023, during its launch demonstration, Google’s Bard provided incorrect information about the James Webb Space Telescope, an error that contributed to a $100 billion decline in Alphabet’s stock value.[6]
+Modern editions
+Contemporary culture
+Reflections in Western culture
+Antecedents in Maya iconography
+Notable editions
+See also
+Notes
+External links
+Popol Vuh
 
-RAG systems do not inherently verify the credibility of the sources they retrieve from, which can lead to misleading or inaccurate responses. AI systems can generate misinformation even when pulling from factually correct sources if they misinterpret the context.[8] MIT Technology Review gives the example of an AI-generated response stating, "The United States has had one Muslim president, Barack Hussein Obama." The model retrieved this from an academic book titled Barack Hussein Obama: America’s First Muslim President? and misinterpreted the content, generating a false claim.[2]
+Article
+Talk
+Read
+Edit
+View history
 
-Retrieval-Augmented Generation (RAG) is a method that allows large language models (LLMs) to retrieve and incorporate additional information before generating responses.[7] Unlike LLMs that rely solely on pre-existing training data, RAG integrates newly available data at query time.[9] Ars Technica states, "The beauty of RAG is that when new information becomes available, rather than having to retrain the model, all that’s needed is to augment the model’s external knowledge base with the updated information."[6]
+Tools
+Appearance hide
+Text
 
-The BBC describes "prompt stuffing" as a technique within RAG, in which relevant context is inserted into a prompt to guide the model’s response. This approach provides the LLM with key information early in the prompt, encouraging it to prioritize the supplied data over pre-existing training knowledge.[10]
+Small
 
-Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. AWS states, "RAG allows LLMs to retrieve relevant information from external data sources to generate more accurate and contextually relevant responses" (indexing).[11] This approach reduces reliance on static datasets, which can quickly become outdated. When a user submits a query, RAG uses a document retriever to search for relevant content from available sources before incorporating the retrieved information into the model’s response (retrieval).[12] Ars Technica notes that "when new information becomes available, rather than having to retrain the model, all that’s needed is to augment the model’s external knowledge base with the updated information" (augmentation).[6] By dynamically integrating relevant data, RAG enables LLMs to generate more informed and contextually grounded responses (generation).[5] IBM states that "in the generative phase, the LLM draws from the augmented prompt and its internal representation of its training data to synthesize an engaging answer tailored to the user in that instant.[1]
+Standard
 
-Typically, the data to be referenced is converted into LLM embeddings, numerical representations in the form of a large vector space.[8] RAG can be used on unstructured (usually text), semi-structured, or structured data (for example knowledge graphs).[13] These embeddings are then stored in a vector database to allow for document retrieval.[14]
+Large
+Width
 
-Given a user query, a document retriever is first called to select the most relevant documents that will be used to augment the query.[2][4] This comparison can be done using a variety of methods, which depend in part on the type of indexing used.[1][13]
+Standard
 
-The model feeds this relevant retrieved information into the LLM via prompt engineering of the user's original query.[11][15] Newer implementations (as of 2023[update]) can also incorporate specific augmentation modules with abilities such as expanding queries into multiple domains and using memory and self-improvement to learn from previous retrievals.[13]
+Wide
+Color (beta)
 
-Finally, the LLM can generate output based on both the query and the retrieved documents.[2][16] Some models incorporate extra steps to improve output, such as the re-ranking of retrieved information, context selection, and fine-tuning.[13]
+Automatic
 
-Improvements to the basic process above can be applied at different stages in the RAG flow.
+Light
 
-These methods focus on the encoding of text as either dense or sparse vectors. Sparse vectors, which encode the identity of a word, are typically dictionary-length and contain mostly zeros. Dense vectors, which encode meaning, are more compact and contain fewer zeros. Various enhancements can improve the way similarities are calculated in the vector stores (databases).[17]
+Dark
+From Wikipedia, the free encyclopedia
+For other uses, see Popol Vuh (disambiguation).
 
-These methods aim to enhance the quality of document retrieval in vector databases:
+The oldest surviving written account of Popol Vuh (ms c. 1701 by Francisco Ximénez, O.P.)
+Popol Vuh (also Popul Vuh or Pop Vuj)[1][2] is a text recounting the mythology and history of the Kʼicheʼ people of Guatemala, one of the Maya peoples who also inhabit the Mexican states of Chiapas, Campeche, Yucatan and Quintana Roo, as well as areas of Belize, Honduras and El Salvador.
 
-By redesigning the language model with the retriever in mind, a 25-time smaller network can get comparable perplexity as its much larger counterparts.[25]  Because it is trained from scratch, this method (Retro) incurs the high cost of training runs that the original RAG scheme avoided.  The hypothesis is that by giving domain knowledge during training, Retro needs less focus on the domain and can devote its smaller weight resources only to language semantics.  The redesigned language model is shown here.
+The Popol Vuh is a foundational sacred narrative of the Kʼich'eʼ people from long before the Spanish conquest of the Maya.[3] It includes the Mayan creation myth, the exploits of the Hero Twins Hunahpú and Xbalanqué,[4] and a chronicle of the Kʼicheʼ people.
 
-It has been reported that Retro is not reproducible, so modifications were made to make it so.  The more reproducible version is called Retro++ and includes in-context RAG.[26]
+The name "Popol Vuh" translates as "Book of the Community" or "Book of Counsel" (literally "Book that pertains to the mat", since a woven mat was used as a royal throne in ancient Kʼicheʼ society and symbolised the unity of the community).[5] It was originally preserved through oral tradition[6] until approximately 1550, when it was recorded in writing.[7] The documentation of the Popol Vuh is credited to the 18th-century Spanish Dominican friar Francisco Ximénez, who prepared a manuscript with a transcription in Kʼicheʼ and parallel columns with translations into Spanish.[6][8]
 
-Chunking involves various strategies for breaking up the data into vectors so the retriever can find details in it.[14]
+Like the Chilam Balam and similar texts, the Popol Vuh is of particular importance given the scarcity of early accounts dealing with Mesoamerican mythologies. As part of the Spanish conquest, missionaries and colonists destroyed many documents.[9]
 
-Three types of chunking strategies are:
+History
+Francisco Ximénez's manuscript
+In 1701, Francisco Ximénez, a Dominican priest, came to Santo Tomás Chichicastenango (also known as Santo Tomás Chuilá). This town was in the Quiché territory and is likely where Ximénez first recorded the work.[10] Ximénez transcribed and translated the account, setting up parallel Kʼicheʼ and Spanish language columns in his manuscript. (He represented the Kʼicheʼ language phonetically with Latin and Parra characters.) In or around 1714, Ximénez incorporated the Spanish content in book one, chapters 2–21 of his Historia de la provincia de San Vicente de Chiapa y Guatemala de la orden de predicadores. Ximénez's manuscripts were held posthumously by the Dominican Order until General Francisco Morazán expelled the clerics from Guatemala in 1829–30. At that time the Order's documents were taken over largely by the Universidad de San Carlos.
 
-Rather than using documents as a source to vectorize and retrieve from, Knowledge Graphs can be used. One can start with a set of documents, books, or other bodies of text, and convert them to a knowledge graph using one of many methods, including language models. Once the knowledge graph is created, subgraphs can be vectorized, stored in a vector database, and used for retrieval as in plain RAG. The advantage here is that graphs has more recognizable structure than strings of text and this structure can help retrieve more relevant facts for generation. Sometimes this approach is called GraphRAG.[citation needed]
+From 1852 to 1855, Moritz Wagner and Carl Scherzer traveled in Central America, arriving in Guatemala City in early May 1854.[11] Scherzer found Ximénez's writings in the university library, noting that there was one particular item "del mayor interés" ('of the greatest interest'). With assistance from the Guatemalan historian and archivist Juan Gavarrete, Scherzer copied (or had a copy made of) the Spanish content from the last half of the manuscript, which he published upon his return to Europe.[12] In 1855, French Abbot Charles Étienne Brasseur de Bourbourg also came across Ximénez's manuscript in the university library. However, whereas Scherzer copied the manuscript, Brasseur apparently stole the university's volume and took it back to France.[13] After Brasseur's death in 1874, the Mexico-Guatémalienne collection containing Popol Vuh passed to Alphonse Pinart, through whom it was sold to Edward E. Ayer. In 1897, Ayer decided to donate his 17,000 pieces to The Newberry Library in Chicago, a project that was not completed until 1911. Father Ximénez's transcription-translation of Popol Vuh was among Ayer's donated items.
 
-Sometimes vector database searches can miss key facts needed to answer a user's question. One way to mitigate this is to do a traditional text search, add those results to the text chunks linked to the retrieved vectors from the vector search, and feed the combined hybrid text into the language model for generation.[citation needed]
+Priest Ximénez's manuscript sank into obscurity until Adrián Recinos rediscovered it at the Newberry in 1941. Recinos is generally credited with finding the manuscript and publishing the first direct edition since Scherzer. But Munro Edmonson and Carlos López attribute the first rediscovery to Walter Lehmann in 1928.[14] Experts Allen Christenson, Néstor Quiroa, Rosa Helena Chinchilla Mazariegos, John Woodruff, and Carlos López all consider the Newberry volume to be Ximénez's one and only "original."
 
-RAG is not a complete solution to the problem of hallucinations in LLMs. According to Ars Technica, "It is not a direct solution because the LLM can still hallucinate around the source material in its response."[6]
+'Popol Vuh' is also spelled as 'Popol Vuj', its sound in Spanish use is close to German term for 'book': 'buch', in the translation of title meaning by Adrián Recinos, both phonetics and etymology connect to 'People's book', in the line of 'people' used as a synonym for the whole nation or tribe, as in 'Bible, book of Lord's people'.
 
-While RAG improves the accuracy of large language models (LLMs), it does not eliminate all challenges. One limitation is that while RAG reduces the need for frequent model retraining, it does not remove it entirely. Additionally, LLMs may struggle to recognize when they lack sufficient information to provide a reliable response. Without specific training, models may generate answers even when they should indicate uncertainty. According to IBM, this issue can arise when the model lacks the ability to assess its own knowledge limitations.[1]
+Father Ximénez's source
+Title page
+Preamble
+Creation
+Father Ximénez's manuscript contains the oldest known text of Popol Vuh. It is mostly written in parallel Kʼicheʼ and Spanish as in the front and rear of the first folio pictured here.
+It is generally believed that Ximénez borrowed a phonetic manuscript from a parishioner for his source, although Néstor Quiroa points out that "such a manuscript has never been found, and thus Ximenez's work represents the only source for scholarly studies."[15] This document would have been a phonetic rendering of an oral recitation performed in or around Santa Cruz del Quiché shortly following Pedro de Alvarado's 1524 conquest. By comparing the genealogy at the end of Popol Vuh with dated colonial records, Adrián Recinos and Dennis Tedlock suggest a date between 1554 and 1558.[16] But to the extent that the text speaks of a "written" document, Woodruff cautions that "critics appear to have taken the text of the first folio recto too much at face value in drawing conclusions about Popol Vuh's survival."[17] If there was an early post-conquest document, one theory (first proposed by Rudolf Schuller) ascribes the phonetic authorship to Diego Reynoso, one of the signatories of the Título de Totonicapán.[18] Another possible author could have been Don Cristóbal Velasco, who, also in Titulo de Totonicapán, is listed as "Nim Chokoh Cavec" ('Great Steward of the Kaweq').[19][20] In either case, the colonial presence is clear in Popol Vuh's preamble: "This we shall write now under the Law of God and Christianity; we shall bring it to light because now the Popol Vuh, as it is called, cannot be seen any more, in which was clearly seen the coming from the other side of the sea and the narration of our obscurity, and our life was clearly seen."[21] Accordingly, the need to "preserve" the content presupposes an imminent disappearance of the content, and therefore, Edmonson theorized a pre-conquest glyphic codex. No evidence of such a codex has yet been found.
 
-RAG systems may retrieve factually correct but misleading sources, leading to errors in interpretation. In some cases, an LLM may extract statements from a source without considering its context, resulting in an incorrect conclusion.[12] Additionally, when faced with conflicting information, RAG models may struggle to determine which source is accurate and may combine details from multiple sources, producing responses that merge outdated and updated information in a misleading way. According to the MIT Technology Review, these issues occur because RAG systems may misinterpret the data they retrieve.[2]
+A minority, however, disputes the existence of pre-Ximénez texts on the same basis that is used to argue their existence. Both positions are based on two statements by Ximénez. The first of these comes from Historia de la provincia where Ximénez writes that he found various texts during his curacy of Santo Tomás Chichicastenango that were guarded with such secrecy "that not even a trace of it was revealed among the elder ministers" although "almost all of them have it memorized."[22] The second passage used to argue pre-Ximénez texts comes from Ximénez's addendum to Popol Vuh. There he states that many of the natives' practices can be "seen in a book that they have, something like a prophecy, from the beginning of their [pre-Christian] days, where they have all the months and signs corresponding to each day, one of which I have in my possession."[23] Scherzer explains in a footnote that what Ximénez is referencing "is only a secret calendar" and that he himself had "found this rustic calendar previously in various indigenous towns in the Guatemalan highlands" during his travels with Wagner.[24] This presents a contradiction because the item which Ximénez has in his possession is not Popol Vuh, and a carefully guarded item is not likely to have been easily available to Ximénez. Apart from this, Woodruff surmises that because "Ximenez never discloses his source, instead inviting readers to infer what they wish [. . .], it is plausible that there was no such alphabetic redaction among the Indians. The implied alternative is that he or another missionary made the first written text from an oral recitation."[25]
+
+Story of Hunahpú and Xbalanqué
+
+Tonsured Maize God and Spotted Hero Twin
+Many versions of the legend of the Hero Twins Hunahpú and Xbalanqué circulated through the Maya peoples[citation needed], but the story that survives was preserved by the Dominican priest Francisco Ximénez[6] who translated the document between 1700 and 1715.[26] Maya deities in the Post-Classic codices differ from the earlier versions described in the Early Classic period. In Mayan mythology Hunahpú and Xbalanqué are the second pair of twins out of three, preceded by Hun-Hunahpú and his brother Vucub-Hunahpú, and precursors to the third pair of twins, Hun Batz and Hun Chuen. In the Popol Vuh, the first set of twins, Hun-Hunahpú and Vucub-Hanahpú were invited to the Mayan Underworld, Xibalba, to play a ballgame with the Xibalban lords. In the Underworld the twins faced many trials filled with trickery; eventually they fail and are put to death. The Hero Twins, Hunahpú and Xbalanqué, are magically conceived after the death of their father, Hun-Hunahpú, and in time they return to Xibalba to avenge the deaths of their father and uncle by defeating the Lords of the Underworld.
+
+Structure
+Popol Vuh encompasses a range of subjects that includes creation, ancestry, history, and cosmology. There are no content divisions in the Newberry Library's holograph, but popular editions have adopted the organization imposed by Brasseur de Bourbourg in 1861 in order to facilitate comparative studies.[27] Though some variation has been tested by Dennis Tedlock and Allen Christenson, editions typically take the following form:
+
+
+A family tree of gods and demigods.
+Vertical lines indicate descent
+Horizontal lines indicate siblings
+Double lines indicate marriage
+Preamble
+
+Introduction to the piece that introduces Xpiyacoc and Xmucane, the purpose for writing the Popol Vuh, and the measuring of the earth.[28]
+Book One
+
+Account of the creation of living beings. Animals were created first, followed by humans. The first humans were made of earth and mud, but crumbled. The second humans were created from wood, but they did not function well and were washed away in a flood and killed by animals. Those that survived became monkeys.[29]
+Vucub-Caquix ascends.[29]
+Book Two
+
+The Hero Twins plan to kill Vucub-Caquix and his sons, Zipacna and Cabracan.[29]
+They succeed, "restoring order and balance to the world."[29]
+Book Three
+
+The father and uncle of The Hero Twins, Hun Hunahpu and Vucub Hunahpu, sons of Xmucane and Xpiacoc, are murdered at a ball game in Xibalba.[29]
+Hun Hunahpu's head is placed in a calabash tree, where it spits in the hand of Xquiq, impregnating her.[29]
+She leaves the underworld to be with her mother-in-law, Xmucane.[29]
+Her sons then challenge the Lords who killed their father and uncle, succeeding and becoming the sun and the moon.[29]
+Book Four
+
+Humans are successfully created from maize.[29]
+The gods give them morality in order to keep them loyal.[29]
+Later, they give the humans wives to make them content.[29]
+This book also describes the movement of the Kʼicheʼ and includes the introduction of Gucumatz.[29]
+Excerpts
+A visual comparison of two sections of the Popol Vuh are presented below and include the original Kʼiche, literal English translation, and modern English translation as shown by Allen Christenson.[30][31][32]
+
+"Preamble"
+Original Kʼiche	Literal English translation	Modern English translation
+AREʼ U XEʼ OJER TZIJ,
+Waral Kʼicheʼ u bʼiʼ.
+WARAL xchiqatzʼibʼaj wi,
+Xchiqatikibʼaʼ wi ojer tzij,
+
+U tikaribʼal,
+
+U xeʼnabʼal puch,
+
+Ronojel xbʼan pa
+
+Tinamit Kʼicheʼ,
+Ramaqʼ Kʼicheʼ winaq.[30][33]
+THIS ITS ROOT ANCIENT WORD,
+Here Quiché its name.
+HERE we shall write,
+We shall plant ancient word,
+
+Its planting,
+
+Its root-beginning as well,
+
+Everything done in
+
+Citadel Quiché,
+Its nation Quiché people.[30]
+THIS IS THE BEGINNING OF THE ANCIENT TRADITIONS
+of this place called Quiché.
+HERE we shall write.
+We shall begin to tell the ancient stories
+
+of the beginning,
+
+the origin
+
+of all that was done in
+
+the citadel of Quiché,
+among the people of the Quiché nation.[34][35]
+"The Primordial World"
+Original Kʼiche	Literal English translation	Modern English translation
+AREʼ U TZIJOXIK
+Waʼe.
+Kʼa katzʼininoq,
+Kʼa kachamamoq,
+
+Katzʼinonik,
+Kʼa kasilanik,
+
+Kʼa kalolinik,
+Katolonaʼ puch u pa kaj.[30][33]
+
+THIS ITS ACCOUNT
+These things.
+Still be it silent,
+Still be it placid,
+
+It is silent,
+Still it is calm,
+
+Still it is hushed,
+Be it empty as well its womb sky.[30]
+
+THIS IS THE ACCOUNT
+of when
+all is still silent
+and placid.
+
+All is silent
+and calm.
+
+Hushed
+and empty is the womb of the sky.[35][36]
+
+Modern history
+Modern editions
+Since Brasseur's and Scherzer's first editions, the Popol Vuh has been translated into many other languages besides its original Kʼicheʼ.[37] The Spanish edition by Adrián Recinos is still a major reference, as is Recino's English translation by Delia Goetz. Other English translations[38] include those of Victor Montejo,[39] Munro Edmonson (1985), and Dennis Tedlock (1985, 1996).[40] Tedlock's version is notable because it builds on commentary and interpretation by a modern Kʼicheʼ daykeeper, Andrés Xiloj. Augustín Estrada Monroy published a facsimile edition in the 1970s and Ohio State University has a digital version and transcription online. Modern translations and transcriptions of the Kʼicheʼ text have been published by, among others, Sam Colop (1999) and Allen J. Christenson (2004). In 2018, The New York Times named Michael Bazzett's new translation as one of the ten best books of poetry of 2018.[41] The tale of Hunahpu and Xbalanque has also been rendered as an hour-long animated film by Patricia Amlin.[42][43]
+
+Contemporary culture
+The Popol Vuh continues to be an important part in the belief system of many Kʼicheʼ.[citation needed] Although Catholicism is generally seen as the dominant religion, some believe that many natives practice a syncretic blend of Christian and indigenous beliefs. Some stories from the Popol Vuh continued to be told by modern Maya as folk legends; some stories recorded by anthropologists in the 20th century may preserve portions of the ancient tales in greater detail than the Ximénez manuscript.[citation needed] On August 22, 2012, the Popol Vuh was declared intangible cultural heritage of Guatemala by the Guatemalan Ministry of Culture.[44]
+
+Reflections in Western culture
+Since its rediscovery by Europeans in the nineteenth century, the Popol Vuh has attracted the attention of many creators of cultural works.
+
+Mexican muralist Diego Rivera produced a series of watercolors in 1931 as illustrations for the book.
+
+In 1934, the early avant-garde Franco-American composer Edgard Varèse wrote his Ecuatorial, a setting of words from the Popol Vuh for bass soloist and various instruments.
+
+The planet of Camazotz in Madeleine L'Engle's A Wrinkle in Time (1962) is named for the bat-god of the hero-twins story.
+
+In 1969 in Munich, Germany, keyboardist Florian Fricke—at the time ensconced in Mayan myth—formed a band named Popol Vuh with synth player Frank Fiedler and percussionist Holger Trulzsch. Their 1970 debut album, Affenstunde, reflected this spiritual connection. Another band by the same name, this one of Norwegian descent, formed around the same time, its name also inspired by the Kʼicheʼ writings.
+
+The text was used by German film director Werner Herzog as extensive narration for the first chapter of his movie Fata Morgana (1971). Herzog and Florian Fricke were life long collaborators and friends.
+
+The Argentinian composer Alberto Ginastera began writing his symphonic work Popol Vuh in 1975, but did not complete the piece before his death in 1983.[45]
+
+The myths and legends included in Louis L'Amour's novel The Haunted Mesa (1987) are largely based on the Popol Vuh.
+
+The Popol Vuh is referenced throughout Robert Rodriguez's television show From Dusk till Dawn: The Series (2014). In particular, the show's protagonists, the Gecko Brothers, Seth and Richie, are referred to as the embodiment of Hunahpú and Xbalanqué, the hero twins, from the Popol Vuh.
+
+In the 2024 historical novel Daughter of Fire by Sofia Robleda, the preservation of the Popol Vuh is central to the plot.
+
+Quotes from the Popol Vuh are used in "Live Gloriously", the main theme for the video game Civilization VII.
+
+Antecedents in Maya iconography
+Contemporary archaeologists (first of all Michael D. Coe) have found depictions of characters and episodes from Popol Vuh on Mayan ceramics and other art objects (e.g., the Hero Twins, Howler Monkey Gods, the shooting of Vucub-Caquix and, as many believe, the restoration of the Twins' dead father, Hun Hunahpu).[46] The accompanying sections of hieroglyphical text could thus, theoretically, relate to passages from the Popol Vuh. Richard D. Hansen found a stucco frieze depicting two floating figures that might be the Hero Twins[47][48][49][50] at the site of El Mirador.[51]
+
+Following the Twin Hero narrative, mankind is fashioned from white and yellow corn, demonstrating the crop's transcendent importance in Maya culture. To the Maya of the Classic period, Hun Hunahpu may have represented the maize god. Although in the Popol Vuh his severed head is unequivocally stated to have become a calabash, some scholars believe the calabash to be interchangeable with a cacao pod or an ear of corn. In this line, decapitation and sacrifice correspond to harvesting corn and the sacrifices accompanying planting and harvesting.[52] Planting and harvesting also relate to Maya astronomy and the calendar, since the cycles of the moon and sun determined the crop seasons.[53]
+
+Notable editions
+1857. Scherzer, Carl, ed. (1857). Las historias del origen de los indios de esta provincia de Guatemala. Vienna: Carlos Gerold e hijo.
+1861. Brasseur de Bourbourg; Charles Étienne (eds.). Popol vuh. Le livre sacré et les mythes de l'antiquité américaine, avec les livres héroïques et historiques des Quichés. Paris: Bertrand.
+1944. Popol Vuh: das heilige Buch der Quiché-Indianer von Guatemala, nach einer wiedergefundenen alten Handschrift neu übers. und erlautert von Leonhard Schultze. Schultze Jena, Leonhard (trans.). Stuttgart, Germany: W. Kohlhammer. OCLC 2549190.
+1947. Recinos, Adrián (ed.). Popol Vuh: las antiguas historias del Quiché. Mexico: Fondo de Cultura Económica.
+1950. Goetz, Delia; Morley, Sylvanus Griswold (eds.). Popol Vuh: The Sacred Book of the Ancient Quiché Maya By Adrián Recinos (1st ed.). Norman: University of Oklahoma Press.
+1971. Edmonson, Munro S. (ed.). The Book of Counsel: The Popol-Vuh of the Quiche Maya of Guatemala. Publ. no. 35. New Orleans: Middle American Research Institute, Tulane University. OCLC 658606.
+1973. Estrada Monroy, Agustín (ed.). Popol Vuh: empiezan las historias del origen de los índios de esta provincia de Guatemala (Edición facsimilar ed.). Guatemala City: Editorial "José de Pineda Ibarra". OCLC 1926769.
+1985. Popol Vuh: the Definitive Edition of the Mayan Book of the Dawn of Life and the Glories of Gods and Kings, with commentary based on the ancient knowledge of the modern Quiché Maya. Translated by Tedlock, Dennis. New York: Simon & Schuster. 1985. ISBN 0-671-45241-X. OCLC 11467786.
+1999. Colop, Sam, ed. (1999). Popol Wuj: versión poética Kʼicheʼ. Quetzaltenango; Guatemala City: Proyecto de Educación Maya Bilingüe Intercultural; Editorial Cholsamaj. ISBN 99922-53-00-2. OCLC 43379466. (in K'iche')
+2004. Popol Vuh: Literal Poetic Version: Translation and Transcription. Christenson, Allen J. (trans.). Norman: University of Oklahoma Press. March 2007. ISBN 978-0-8061-3841-1.
+2007. Popol Vuh: The Sacred Book of the Maya. Christenson, Allen J. (trans.). Norman: University of Oklahoma Press. 2007. ISBN 978-0-8061-3839-8.
+2007. Poopol Wuuj - Das heilige Buch des Rates der K´ichee´-Maya von Guatemala. Rohark, Jens (trans.). Docupoint-Verlag. 2007. ISBN 978-3-939665-32-8.
+2018. The Popol Vuh: A New Verse Translation. Bazzett, Michael (trans.). Seedbank Books. 2018. ISBN 978-1-5713-1468-0.
+See also
+Ancient murals at El Mirador, Guatemala
+Notes
+ Modern Kʼicheʼ: Poopol Wuuj reads Mayan pronunciation: [ˈpʰoːpʰol ˈʋuːχ])
+ Hart, Thomas (2008). The Ancient Spirituality of the Modern Maya. UNM Press. ISBN 978-0-8263-4350-5.
+ Christenson, Allen J. (2007). Popol vuh: the sacred book of the Maya (Oklahoma ed.). Norman: University of Oklahoma Press. pp. 26–31. ISBN 978-0-8061-3839-8. Retrieved 29 September 2017.
+ Junajpu and Xbʼalanke in Modern Kʼicheʼ spelling
+ Christenson, Allen J. (2007). Popol Vuh: the sacred book of the Maya (Oklahoma ed.). Norman: University of Oklahoma Press. p. 64. ISBN 978-0-8061-3839-8. Retrieved 3 November 2017.
+ "Popol Vuh AHA". www.historians.org. American Historical Association. Retrieved 3 November 2017.
+ "Popol Vuh - The Sacred Book of The Mayas". www.vopus.org. VOPUS. Retrieved 3 November 2017.
+ According to Allen Christenson, the mat was a common Maya metaphor for kingship (such as "throne" in English) and national unity.
+ Christenson, Allen J. (2007). Popol Vuh : the sacred book of the Maya (Oklahoma ed.). Norman: University of Oklahoma Press. p. 21. ISBN 978-0-8061-3839-8. Retrieved 3 November 2017.
+ Ximénez's title page reads in part, "cvra doctrinero por el real patronato del pveblo de Sto. Tomas Chvila" ('doctrinal priest of the district of Santo Tomás Chuilá').
+ Woodruff 2009
+ Scherzer also published a detailed inventory of the contents in an 1857 edition that coincides with the Ayer ms. Scherzer's copyscript and edition beginning at the third internal title: 1) Arte de las tres lengvas Kakchiqvel, Qvíche y Zvtvhil, 2) Tratado segvndo de todo lo qve deve saber vn mínístro para la buena admínístraçíon de estos natvrales, 3) Empiezan las historias del origen de los indíos de esta provinçia de Gvatemala, 4) Escolíos a las hístorías de el orígen de los indios [note: spelling is that of Ximénez, but capitalization is modified here for stylistic reasons].
+ Woodruff 2009 pp. 46–47. Brasseur mentions Ximénez's Popol Vuh manuscript in three different works from 1857–1871, but never cites the library document as the source of his 1861 French edition. See Histoire des nations civilisées du Mexique et de l'Amérique-Centrale (1857), Popol vuh. Le livre sacré (1861), and Bibliothèque Mexico-Guatémalienne (1871). It was not until fifteen years after his return to Europe that Brasseur suggested a specific provenance of his source material; he said that it had come from Ignacio Coloche in Rabinal. The inconsistency among his statements led Munro Edmonson (1971) to postulate that there had been multiple manuscripts in Guatemala.
+ Edmonson 1971 p. viii; Lopez 2007
+ Quiroa, "Ideology" 282)
+ Recinos 30–31 (1947); Goetz 22–23 (1950); Tedlock 56 (1996)
+ Woodruff, "Ma(r)king Popol Vuh" 104
+ Recinos 34; Goetz 27; see also Akkeren 2003 and Tedlock 1996.
+ Christenson 2004
+ After the list of rulers, the narrative recounts that the three Great Stewards of the principal ruling Kʼicheʼ lineages were "the mothers of the word, and the fathers of the word"; and the "word" has been interpreted by some to mean the Popol Vuh itself.[citation needed] Since a prominent place is given to the Kaweq lineage at the end of Popol Vuh, the author / scribe / narrator / storyteller may have belonged to this lineage as opposed to another Kʼicheʼ lineage.
+ Goetz 79–80
+ "y así determiné el trasuntar de verbo ad verbum todas sus historias como las traduje en nuestra lengua castellana de la lengua quiché, en que las hallé escritas desde el tiempo de la conquista, que entonces (como allí dicen), las redujeron de su modo de escribir al nuestro; pero fue con todo sigilo que conservó entre ellos con tanto secreto, que ni memoria se hacía entre los ministros antiguos de tal cosa, e indagando yo aqueste punto, estando en el curato de Santo Tomás Chichicastenango, hallé que era la doctrina que primero mamaban con la leche y que todos ellos casi lo tienen de memoria y descubrí que de aquestos libros tenían muchos entre sí [...]" (Ximenez 1999 p. 73; English translation by WP contributor)
+ "Y esto lo ven en un libro que tienen como pronostico desde el tiempo de su gentilidad, donde tienen todos los meses y signos correspondientes á cada dia, que uno de ellos tengo en mi poder" (Scherzer 1857; English translation by WP contributor). This passage is found in Escolios a las historias as appearing on p. 160 of Scherzer's edition.
+ "El libro que el padre Ximenez menciona, no es mas que una formula cabalistica, segun la cual los adivinos engañadores pretendían pronosticar y explicar ciertos eventos. Yo encontré este calendario gentilico ya en diversos pueblos de indios en los altos de Guatemala."
+ Woodruff 104
+ "Popol Vuh Newberry". www.newberry.org. The Newberry Library. Retrieved 3 November 2017.
+ Recinos explains: "The original manuscript is not divided into parts or chapters; the text runs without interruption from the beginning until the end. In this translation I have followed the Brasseur de Bourbourg division into four parts, and each part into chapters, because the arrangement seems logical and conforms to the meaning and subject matter of the work. Since the version of the French Abbe is the best known, this will facilitate the work of those readers who may wish to make a comparative study of the various translations of the Popol Vuh" (Goetz xiv; Recinos 11–12; Brasseur, Popol Vuh, xv)
+ Christenson, Allen J. (2007). Popol Vuh : The Sacred Book of the Maya. Norman, OK: University of Oklahoma Press. pp. 59–66. ISBN 978-0-8061-3839-8. Retrieved 19 October 2017.
+ "Popol Vuh". World History Encyclopedia. Retrieved 10 November 2017.
+ Christenson, Allen J. "POPOL VUH: LITERAL TRANSLATION" (PDF). Mesoweb Publications. Retrieved 19 October 2017.
+ Christenson's edition is considered the most up-to-date version of the Popol Vuh.
+ Christenson, Allen J. (2007). Popol vuh : the sacred book of the Maya (Oklahoma ed.). Norman: University of Oklahoma Press. p. 59. ISBN 978-0-8061-3839-8. Retrieved 3 November 2017.
+ Bold and capitalized letters are taken directly from the source material.
+ Christenson, Allen J. (2007). Popol Vuh : The Sacred Book of the Maya. Norman, OK: University of Oklahoma Press. p. 59. ISBN 978-0-8061-3839-8. Retrieved 19 October 2017.
+ Text has been broken in logical places to parallel the poetic structure of the original text.
+ Christenson, Allen J. (2007). Popol Vuh : The Sacred Book of the Maya. Norman, OK: University of Oklahoma Press. p. 67. ISBN 978-0-8061-3839-8. Retrieved 19 October 2017.
+ Schultze Jena 1944
+ Low 1992
+ MultiCultural Review, Volume 9. GP Subscription Publications. 2000. p. 97. Retrieved May 17, 2014.
+ Dennis Tedlock (2013). Popol Vuh: The Mayan Book of the Dawn of Life. eBookIt.com. ISBN 978-1-4566-1303-7. Retrieved May 17, 2014.
+ Orr, David (December 10, 2018). "The Best Poetry of 2018". The New York Times.
+ Amlin, Patricia (2004). Popol vuh. OCLC 56772917.
+ Archived at Ghostarchive and the Wayback Machine: "The Popol Vuh". YouTube. Retrieved 27 November 2017.
+ Publinews (25 August 2012). "Popol Vuh es declarado Patrimonio Cultural Intangible". Archived from the original on 28 August 2012. Retrieved 25 August 2012.
+ "L. Slatkin discusses Ginastera's 'Popol Vuh' with B. Nissman", YouTube, uploaded 16-Feb-2025.
+ Chinchilla Mazariegos 2003
+ "Authentic Maya". Archived from the original on 2007-12-13. Retrieved 2007-11-30.
+ "Video News". cnn.com. October 14, 2009.
+ "Video News". cnn.com. November 11, 2009.
+ "Breaking News, Latest News and Videos". cnn.com.
+ "El Mirador, the Lost City of the Maya". Archived from the original on 2011-04-28. Retrieved 2011-05-13.
+ Heather Irene McKillop, The Ancient Maya: New Perspectives (London: W.W. Norton & Co., 2006), 214.
+ McKillop, 214.
+External links
+
+Wikimedia Commons has media related to Popol Vuh.
+
+Wikisource has original text related to this article:
+Popol Vuh (Spanish)
+Popol Wuj Archives, sponsored by the Department of Spanish and Portuguese at The Ohio State University, Columbus, Ohio, and the Center for Latin American Studies at OSU.
+A facsimile of the earliest preserved manuscript, in Quiché and Spanish, hosted at The Ohio State University Libraries. Learn more about this project by reading "Decolonial Information Practices: Repatriating and Stewarding the Popol Vuh Online."
+de los Monteros, Pamela Espinosa (2019-10-25). "Decolonial Information Practices: Repatriating and Stewarding the Popol Vuh Online". Preservation, Digital Technology & Culture. 48 (3–4): 107–119. doi:10.1515/pdtc-2019-0009. ISSN 2195-2965.
+The original Quiché text with line-by-line English translation Allen J. Christenson edition
+An English translation by Allen J. Christenson.
+Text in English
+A link to sections of the animated depiction by Patricia Amlin.
+Creation (1931). From the Collections at the Library of Congress
+vte
+Kʼicheʼ mythology
+vte
+Maya civilization
+Authority control databases Edit this at Wikidata
+Categories: Maya mythology and religionMayan literatureGuatemalan folkloreReligious textsCreation myths16th-century booksK'iche'Indigenous American philosophy
+This page was last edited on 15 April 2025, at 20:40 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaCode of ConductDevelopersStatisticsCookie statementMobile view
+Wikimedia Foundation
+Powered by MediaWiki
+
+Popol Vuh
+
+44 languages
+Add topic
